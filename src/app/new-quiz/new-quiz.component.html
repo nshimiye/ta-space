@@ -1,0 +1,20 @@
+<div style="width: 250px;">
+
+  <form (submit)="createQuiz($event)" style="display: flex; flex-direction: column;">
+    <input type="text" placeholder="Title">
+    <input type="text" placeholder="question 1">
+    <input type="text" placeholder="question 2">
+    <input type="text" placeholder="question 3">
+    <input type="text" placeholder="question 4">
+    <input type="text" placeholder="question 5">
+    <button type="submit">Submit</button>
+  </form>
+
+</div>
+
+
+<ng-template portal>
+  <div>
+    Creating as Teacher 1 <button type="button" (click)="createQuiz($event)">Create</button>
+  </div>
+</ng-template>

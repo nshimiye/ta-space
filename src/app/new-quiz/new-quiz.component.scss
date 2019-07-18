@@ -1,0 +1,17 @@
+@mixin placeholder {
+    &::placeholder,
+    &:-ms-input-placeholder {
+        @content
+    }
+}
+input {
+    // @include placeholder {
+    //     color: purple;
+    // }
+    //  {
+    //     color: blue;
+    // }
+    &:-ms-input-placeholder, &::placeholder {
+        color: blue;
+    }
+}
